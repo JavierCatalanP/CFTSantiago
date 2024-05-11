@@ -38,7 +38,7 @@ multiplicar_tres(1.3, 9, 5)
 """
 
 
-
+"""
 print("Forma 3 de usar modulos de paquetes, esta es: \n")
 
 from matematicas.suma import suma_dos as sm_d
@@ -50,6 +50,7 @@ sm_d(2, 5)
 rt_t( 4, 2, 1)
 dv_d(100, 5)
 mp_t(1.3, 9, 5)
+"""
 
 
 """
