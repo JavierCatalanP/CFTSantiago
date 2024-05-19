@@ -1,4 +1,4 @@
-ruta = "compra.txt"
+ruta = "compra"
 
 def archivo(funcion_parametro):
     def funcion_ejecutar(**kwargs):
