@@ -18,8 +18,7 @@ def saludo():
     print("Hola")
     
 def pregunta():
-    print("Como estas?")
-    
+    print("Como estas?")    
 respuesta = funcion_principal(pregunta)
 respuesta()
 
