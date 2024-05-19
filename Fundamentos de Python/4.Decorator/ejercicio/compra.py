@@ -1,4 +1,4 @@
-ruta = "compra"
+ruta = "ejercicioDecotator"
 
 def archivo(funcion_parametro):
     def funcion_ejecutar(**kwargs):
@@ -16,15 +16,15 @@ def Agregar_Compra(obj_ar, **kwargs):  # Asegúrate de recibir el objeto de arch
     fila = "{},{},{},{}\n".format(nom_producto, cantidad, precio_unitario, total)
     obj_ar.write(fila)  # Escribe directamente usando el objeto de archivo pasado
 
-# Ejemplo de uso
-#data = {"nom_producto": "Hojas", "cant": 100, "prec_unit": 1}
-#Agregar_Compra(**data)
+#Ejemplo de uso
+data = {"nom_producto": "Hojas", "cant": 10, "prec_unit": 35}
+Agregar_Compra(**data)
 
 @archivo
 def Listar_Productos(obj_ar):
     obj_ar.seek(0, 0)
     print(obj_ar.read())
-#Listar_Productos()
+Listar_Productos()
 
 @archivo
 def Obtener_Productos(obj_ar):
@@ -32,7 +32,7 @@ def Obtener_Productos(obj_ar):
     return obj_ar.readlines()
 
 resultado = Obtener_Productos()
-#print(resultado)
+print(resultado)
 
 def Total_Ventas():
     total_ventas = 0
@@ -43,7 +43,7 @@ def Total_Ventas():
         
     print("El total de ventas del día es: " + str(total_ventas))
 
-#Total_Ventas()
+Total_Ventas()
 
 def Total_Productos_Vendidos():
     total_cantidad = 0
