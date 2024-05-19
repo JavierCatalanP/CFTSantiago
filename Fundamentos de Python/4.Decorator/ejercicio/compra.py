@@ -13,7 +13,7 @@ def Agregar_Compra(obj_ar, **kwargs):  # Asegúrate de recibir el objeto de arch
     cantidad = kwargs["cant"]
     precio_unitario = kwargs["prec_unit"]
     total = kwargs["cant"] * kwargs["prec_unit"]  # Calcula el total correctamente
-    fila = "{},{},{},{}\n".format(nom_producto, cantidad, precio_unitario, total)
+    fila = "{},{},{},{}\n".format(nom_producto, cantidad, precio_unitario, total
     obj_ar.write(fila)  # Escribe directamente usando el objeto de archivo pasado
 
 #Ejemplo de uso
